@@ -1,0 +1,587 @@
+
+def MemAlloc(S) {
+    
+    int size = S
+
+    int mempos = 1312
+
+    int memsize = RAM[mempos + 2] 
+    
+
+    if memsize > size {
+    
+        int newpos = RAM[mempos + 1]
+        
+        RAM[newpos] = 0
+        
+        RAM[newpos + 1] = size
+        
+        RAM[mempos + 1] = newpos + 2 + size
+        
+        RAM[mempos + 2] = memsize - size - 3
+        
+        
+    
+};
+
+
+    return newpos + 2
+    
+    
+};
+
+
+def Multiply(x, y) {
+    
+    int dev = 1
+    int rem = 0
+    
+    while dev < y or dev == y {
+        
+        int rem = rem + x
+        
+        
+        int dev = dev + 1
+        
+        
+    };
+    
+    
+    
+    
+    return rem
+    
+    
+    
+    
+};
+
+
+
+
+def line_V(start, length, color) {
+
+    int y = 0
+    int u = start
+    
+    
+    while y != length {
+    
+        RAM[u] = color
+        int y = y + 1    
+        int u = u + 256
+      
+    
+    };
+    
+    
+
+};
+
+
+def line_H(start, length, color) {
+
+    int y = 0
+    int u = start
+    
+    while y != length {
+    
+        RAM[u] = color
+        int y = y + 1    
+        int u = u + 1
+        
+     
+    };
+    
+  
+};
+    
+def letter(start, color, type) {
+    
+    int st = 0
+
+    
+    if type == 97 {
+        line_H(start, 4, color)
+        st = start + 256
+        line_V(st, 3, color)
+        st = start + 3 + 256
+        line_V(st, 3, color)
+        st = start + 1 + 512
+        line_H(st, 2, color)
+        st = 5
+    };
+
+   
+    elseif type == 99 {
+        line_H(start, 4, color)
+        st = start + 256
+        line_V(st, 3, color)
+        st = start + 768
+        line_H(st, 4, color)
+    };
+
+  
+    elseif type == 100 {
+        line_V(start, 4, color)
+        st = start
+        line_H(st, 3, color)
+        st = start + 768
+        line_H(st, 3, color)
+        st = start + 3
+        line_V(st, 4, color)
+    };
+
+  
+    elseif type == 101 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 5, color)
+        st = start + 512
+        line_H(st, 4, color)
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+    
+    elseif type == 102 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 5, color)
+        st = start + 512
+        line_H(st, 4, color)
+    };
+
+    elseif type == 103 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 5, color)
+        st = start + 3 + 512
+        line_H(st, 3, color)
+        st = start + 5 + 768
+        line_V(st, 2, color)
+        st = start + 1024
+        line_H(st, 6, color)
+    };
+
+    
+    elseif type == 104 {
+        st = start
+        line_V(st, 5, color)
+        st = start + 512
+        line_H(st, 4, color)
+        st = start + 3
+        line_V(st, 5, color)
+    };
+
+    elseif type == 105 {
+        line_H(start, 4, color)
+        st = start + 1
+        line_V(st, 5, color)
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+    
+    elseif type == 106 {
+        line_H(start, 3, color)
+        st = start + 3
+        line_V(st, 4, color)
+        st = start + 768
+        line_V(st, 2, color)
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+   
+    elseif type == 107 {
+        st = start
+        line_V(st, 5, color)
+        st = start + 512
+        line_H(st, 3, color)
+        st = start + 3
+        line_V(st, 2, color)
+        st = start + 3 + 768
+        line_V(st, 2, color)
+    };
+
+    
+    elseif type == 108 {
+        st = start
+        line_V(st, 5, color)
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+    
+    elseif type == 109 {
+        st = start
+        line_V(st, 5, color)
+        st = start + 2
+        line_V(st, 5, color)
+        st = start + 4
+        line_V(st, 5, color)
+        st = start + 6
+        line_H(start, 5, color)
+    };
+
+   
+    elseif type == 110 {
+        st = start
+        line_V(st, 5, color)
+        st = start + 4
+        line_V(st, 5, color)
+        st = start + 1 + 512
+        line_H(st, 1, color)
+        st = start + 2 + 768
+        line_H(st, 1, color)
+        st = start + 3 + 1024
+        line_H(st, 1, color)
+    };
+
+    
+    elseif type == 111 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 5, color)
+        st = start + 3
+        line_V(st, 5, color)
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+    
+    elseif type == 112 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 5, color)
+        st = start + 3
+        line_V(st, 2, color)
+        st = start + 512
+        line_H(st, 4, color)
+    };
+
+    
+    elseif type == 113 {
+        line_H(start, 5, color)
+        st = start
+        line_V(st, 4, color)
+        st = start + 5
+        line_V(st, 4, color)
+        st = start + 1024
+        line_H(st, 5, color)
+        st = start + 4 + 1280
+        line_V(st, 1, color)
+    };
+
+    elseif type == 114 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 5, color)
+        st = start + 4
+        line_V(st, 2, color)
+        st = start + 512
+        line_H(st, 4, color)
+        st = start + 4 + 768
+        line_V(st, 2, color)
+    };
+
+    
+    elseif type == 115 {
+        line_H(start, 4, color)
+        st = start
+        line_V(st, 2, color)
+        st = start + 512
+        line_H(st, 4, color)
+        st = start + 3 + 768
+        line_V(st, 2, color)
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+   
+    elseif type == 116 {
+        line_H(start, 5, color)
+        st = start + 2
+        line_V(st, 5, color)
+    };
+
+  
+    elseif type == 117 {
+        st = start
+        line_V(st, 4, color)
+        st = start + 4
+        line_V(st, 4, color)
+        st = start + 1024
+        line_H(st, 5, color)
+    };
+
+    
+    elseif type == 118 {
+        st = start
+        line_V(st, 4, color)
+        st = start + 4
+        line_V(st, 4, color)
+        st = start + 2 + 1024
+        line_H(st, 1, color)
+    };
+
+    elseif type == 119 {
+        st = start
+        line_V(st, 4, color)
+        st = start + 3
+        line_V(st, 4, color)
+        st = start + 6
+        line_V(st, 4, color)
+        st = start + 768
+        line_H(st, 6, color)
+    };
+
+    
+    elseif type == 120 {
+        st = start
+        line_V(st, 2, color)
+        st = start + 4
+        line_V(st, 2, color)
+        st = start + 2 + 512
+        line_V(st, 1, color)
+        st = start + 768
+        line_V(st, 2, color)
+        st = start + 4 + 768
+        line_V(st, 2, color)
+    };
+
+    
+    elseif type == 121 {
+        st = start
+        line_V(st, 2, color)
+        st = start + 4
+        line_V(st, 2, color)
+        st = start + 2 + 512
+        line_V(st, 3, color)
+    };
+
+    
+    elseif type == 122 {
+        line_H(start, 3, color)
+        st = start + 256
+        RAM[st + 2] = color
+        st = start + 512
+        RAM[st + 1] = color
+        st = start + 768
+        RAM[st] = color
+        st = start + 1024
+        line_H(st, 4, color)
+    };
+
+  
+    elseif type == 49 {
+        st = start
+        line_V(st + 1, 5, color)
+    };
+
+    
+    elseif type == 50 {
+        line_H(start, 4, color)
+        st = start + 256
+        RAM[st + 3] = color
+        st = st + 256
+        RAM[st + 2] = color
+        st = st + 256
+        RAM[st + 1] = color
+        st = st + 256
+        line_H(st, 4, color)
+    };
+
+    elseif type == 51 {
+        line_H(start, 4, color)
+        st = start + 256
+        RAM[st + 3] = color
+        st = st + 256
+        RAM[st + 2] = color
+        st = st + 256
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+    };
+
+   
+    elseif type == 52 {
+        st = start
+        line_V(st, 3, color)
+        st = start + 512
+        line_H(st, 4, color)
+        st = start + 256
+        line_V(st + 3, 5, color)
+    };
+
+    
+    elseif type == 53 {
+        line_H(start, 4, color)
+        st = start + 256
+        line_V(st, 2, color)
+        st = start + 512
+        line_H(st, 4, color)
+        st = st + 256
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+    };
+
+   
+    elseif type == 54 {
+        line_H(start, 4, color)
+        st = start + 256
+        RAM[st] = color
+        st = st + 256
+        line_H(st, 4, color)
+        st = st + 256
+        RAM[st] = color
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+    };
+
+   
+    elseif type == 55 {
+        line_H(start, 4, color)
+        st = start + 256
+        RAM[st + 3] = color
+        st = st + 256
+        RAM[st + 2] = color
+        st = st + 256
+        RAM[st + 1] = color
+        st = st + 256
+        RAM[st] = color
+    };
+
+  
+    elseif type == 56 {
+        line_H(start, 4, color)
+        st = start + 256
+        RAM[st] = color
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+        st = st + 256
+        RAM[st] = color
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+    };
+
+   
+    elseif type == 57 {
+        line_H(start, 4, color)
+        st = start + 256
+        RAM[st] = color
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+        st = st + 256
+        RAM[st + 3] = color
+        st = st + 256
+        line_H(st, 4, color)
+        
+        
+    };
+
+};
+
+
+
+
+
+def Print(string, tracker) {
+    
+
+    int size = RAM[string - 2]
+    int index = 0
+    
+    while (index < size) or (index == size) {
+        
+        
+        letter(RAM[tracker], 70, string[index])
+        index = index + 1
+        RAM[tracker] = RAM[tracker] + 7
+        
+        
+    };
+    
+    RAM[tracker] = RAM[tracker] + 7
+   
+    
+};
+
+
+def rect(start, width, height, color, fill) {
+
+    if fill == false {
+
+        line_H(start, width, color)
+
+        int st = start
+        line_V(st, height, color)
+
+        int st = start + (width - 1)
+        line_V(st, height, color)
+
+        int st = start + Multiply(256, (height - 1)) 
+        line_H(st, width, color)
+
+    };
+
+    if fill == true {
+
+        int y = 0
+        int st = start
+
+        while y < height {
+
+            line_H(st, width, color)
+
+            int st = st + 256
+            int y = y + 1
+        };
+
+    };
+
+};
+
+
+
+
+
+def KeyPress() {
+    
+    
+    int key = RAM[65000]
+    
+    return key
+    
+    
+    
+    
+};
+
+
+def Main() {
+  
+
+    Print('aku os', 12)
+    rect(7040, 10, 10, 78, 1)
+    RAM[12] = (RAM[12] + Multiply(256, 6)) - 40
+    Print('hello', 12)
+    RAM[1313] = 3500
+    RAM[1314] = 4977
+    RAM[12] = 7000
+    
+       
+ 
+
+};
+
+
+
+
+

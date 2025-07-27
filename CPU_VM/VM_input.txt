@@ -1,0 +1,1743 @@
+!function:MemAlloc:1
+push argument: 0
+pop local: 0
+push constant: 1312
+pop local: 1
+push local: 1
+push constant: 2
+add
+point
+push this: 0
+pop local: 2
+push local: 2
+push local: 0
+less
+if-false-goto: 13IE1JG
+push local: 1
+push constant: 1
+add
+point
+push this: 0
+pop local: 3
+push constant: 0
+push local: 3
+point
+pop this: 0
+push local: 0
+push local: 3
+push constant: 1
+add
+point
+pop this: 0
+push local: 3
+push local: 0
+push constant: 2
+add
+add
+push local: 1
+push constant: 1
+add
+point
+pop this: 0
+push local: 2
+push local: 0
+push constant: 3
+sub
+sub
+push local: 1
+push constant: 2
+add
+point
+pop this: 0
+label: 13IE1JG
+push local: 3
+push constant: 2
+add
+goto: MemAllocR2B08TQ
+label: MemAllocR2B08TQ
+return
+!function:Multiply:2
+push constant: 1
+pop local: 0
+push constant: 0
+pop local: 1
+label: XBVL7JJ
+push local: 0
+push argument: 1
+push local: 0
+push argument: 1
+eq
+or
+grat
+if-false-goto: T5UI10K
+push local: 1
+push argument: 0
+add
+pop local: 1
+push local: 0
+push constant: 1
+add
+pop local: 0
+goto: XBVL7JJ
+label: T5UI10K
+push local: 1
+goto: MultiplyWMG6O3X
+label: MultiplyWMG6O3X
+return
+!function:line_V:3
+push constant: 0
+pop local: 0
+push argument: 0
+pop local: 1
+label: 615TVO2
+push local: 0
+push argument: 1
+eq
+push constant: 0
+eq
+if-false-goto: 88AGT4R
+push argument: 2
+push local: 1
+point
+pop this: 0
+push local: 0
+push constant: 1
+add
+pop local: 0
+push local: 1
+push constant: 256
+add
+pop local: 1
+goto: 615TVO2
+label: 88AGT4R
+label: line_V45AL6V7
+push constant: 0
+nullreturn
+!function:line_H:3
+push constant: 0
+pop local: 0
+push argument: 0
+pop local: 1
+label: A6PMIYD
+push local: 0
+push argument: 1
+eq
+push constant: 0
+eq
+if-false-goto: NPBE0A6
+push argument: 2
+push local: 1
+point
+pop this: 0
+push local: 0
+push constant: 1
+add
+pop local: 0
+push local: 1
+push constant: 1
+add
+pop local: 1
+goto: A6PMIYD
+label: NPBE0A6
+label: line_HR83PPA9
+push constant: 0
+nullreturn
+!function:letter:3
+push constant: 0
+pop local: 0
+push argument: 2
+push constant: 97
+eq
+if-false-goto: BIBFXVA
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 3
+push constant: 256
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1
+push constant: 512
+add
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_H
+push constant: 5
+pop local: 0
+goto: A414FU9
+label: BIBFXVA
+push argument: 2
+push constant: 99
+eq
+if-false-goto: R371C7P
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 768
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: R371C7P
+push argument: 2
+push constant: 100
+eq
+if-false-goto: A8N45WG
+call: #line_V
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 768
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: A8N45WG
+push argument: 2
+push constant: 101
+eq
+if-false-goto: S3GA7M5
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: S3GA7M5
+push argument: 2
+push constant: 102
+eq
+if-false-goto: VBJHOR0
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: VBJHOR0
+push argument: 2
+push constant: 103
+eq
+if-false-goto: 6KUSZ3U
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 3
+push constant: 512
+add
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 5
+push constant: 768
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 6
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: 6KUSZ3U
+push argument: 2
+push constant: 104
+eq
+if-false-goto: LXD6PSG
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: LXD6PSG
+push argument: 2
+push constant: 105
+eq
+if-false-goto: IYCUK6Y
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 1
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: IYCUK6Y
+push argument: 2
+push constant: 106
+eq
+if-false-goto: SD8LK3F
+call: #line_H
+push argument: 0
+push constant: 3
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 768
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: SD8LK3F
+push argument: 2
+push constant: 107
+eq
+if-false-goto: 899NOM2
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 3
+push constant: 768
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: 899NOM2
+push argument: 2
+push constant: 108
+eq
+if-false-goto: LPNZHRO
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: LPNZHRO
+push argument: 2
+push constant: 109
+eq
+if-false-goto: GV7HVV3
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 2
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 6
+add
+pop local: 0
+call: #line_H
+push argument: 0
+push constant: 5
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: GV7HVV3
+push argument: 2
+push constant: 110
+eq
+if-false-goto: WA562SZ
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1
+push constant: 512
+add
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 1
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 2
+push constant: 768
+add
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 1
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 3
+push constant: 1024
+add
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 1
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: WA562SZ
+push argument: 2
+push constant: 111
+eq
+if-false-goto: C1QZVDI
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: C1QZVDI
+push argument: 2
+push constant: 112
+eq
+if-false-goto: UII7QJE
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: UII7QJE
+push argument: 2
+push constant: 113
+eq
+if-false-goto: WLITYJB
+call: #line_H
+push argument: 0
+push constant: 5
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 5
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 4
+push constant: 1280
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 1
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: WLITYJB
+push argument: 2
+push constant: 114
+eq
+if-false-goto: 1RGA8L0
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 4
+push constant: 768
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: 1RGA8L0
+push argument: 2
+push constant: 115
+eq
+if-false-goto: L49QGCS
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 3
+push constant: 768
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: L49QGCS
+push argument: 2
+push constant: 116
+eq
+if-false-goto: MHYFZPW
+call: #line_H
+push argument: 0
+push constant: 5
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 2
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: MHYFZPW
+push argument: 2
+push constant: 117
+eq
+if-false-goto: 126PCFI
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 5
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: 126PCFI
+push argument: 2
+push constant: 118
+eq
+if-false-goto: CV3OIHX
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 2
+push constant: 1024
+add
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 1
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: CV3OIHX
+push argument: 2
+push constant: 119
+eq
+if-false-goto: M32NRMM
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 3
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 6
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 768
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 6
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: M32NRMM
+push argument: 2
+push constant: 120
+eq
+if-false-goto: WXHW0H0
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 2
+push constant: 512
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 1
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 768
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+push constant: 768
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: WXHW0H0
+push argument: 2
+push constant: 121
+eq
+if-false-goto: TM8WRUK
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 4
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 2
+push constant: 512
+add
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: TM8WRUK
+push argument: 2
+push constant: 122
+eq
+if-false-goto: ZIUTSKR
+call: #line_H
+push argument: 0
+push constant: 3
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 2
+add
+point
+pop this: 0
+push argument: 0
+push constant: 512
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 1
+add
+point
+pop this: 0
+push argument: 0
+push constant: 768
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+push argument: 0
+push constant: 1024
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: ZIUTSKR
+push argument: 2
+push constant: 49
+eq
+if-false-goto: 7EBTJ39
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 1
+add
+push constant: 5
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: 7EBTJ39
+push argument: 2
+push constant: 50
+eq
+if-false-goto: HZOPFGE
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 2
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 1
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: HZOPFGE
+push argument: 2
+push constant: 51
+eq
+if-false-goto: WUPIGMK
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 2
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: WUPIGMK
+push argument: 2
+push constant: 52
+eq
+if-false-goto: ADGGON4
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 3
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 3
+add
+push constant: 5
+push argument: 1
+end: #line_V
+goto: A414FU9
+label: ADGGON4
+push argument: 2
+push constant: 53
+eq
+if-false-goto: VNLIIYQ
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+call: #line_V
+push local: 0
+push constant: 2
+push argument: 1
+end: #line_V
+push argument: 0
+push constant: 512
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: VNLIIYQ
+push argument: 2
+push constant: 54
+eq
+if-false-goto: SLNTU93
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: SLNTU93
+push argument: 2
+push constant: 55
+eq
+if-false-goto: ZK79ZJ4
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 2
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 1
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+goto: A414FU9
+label: ZK79ZJ4
+push argument: 2
+push constant: 56
+eq
+if-false-goto: UYBWEQ5
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: UYBWEQ5
+push argument: 2
+push constant: 57
+eq
+if-false-goto: A414FU9
+call: #line_H
+push argument: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push argument: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+point
+pop this: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+push local: 0
+push constant: 256
+add
+pop local: 0
+push argument: 1
+push local: 0
+push constant: 3
+add
+point
+pop this: 0
+push local: 0
+push constant: 256
+add
+pop local: 0
+call: #line_H
+push local: 0
+push constant: 4
+push argument: 1
+end: #line_H
+goto: A414FU9
+label: A414FU9
+label: letterG8DNHPT
+push constant: 0
+nullreturn
+!function:Print:2
+push argument: 0
+push constant: 2
+sub
+point
+push this: 0
+pop local: 0
+push constant: 0
+pop local: 1
+label: MWGKG0U
+push local: 1
+push local: 0
+grat
+push local: 1
+push local: 0
+eq
+or
+if-false-goto: 6M2VLPH
+call: #letter
+push argument: 1
+point
+push this: 0
+push constant: 70
+push argument: 0
+push local: 1
+add
+point
+push this: 0
+end: #letter
+push local: 1
+push constant: 1
+add
+pop local: 1
+push argument: 1
+point
+push this: 0
+push constant: 7
+add
+push argument: 1
+point
+pop this: 0
+goto: MWGKG0U
+label: 6M2VLPH
+push argument: 1
+point
+push this: 0
+push constant: 7
+add
+push argument: 1
+point
+pop this: 0
+label: PrintFV6AJSY
+push constant: 0
+nullreturn
+!function:rect:5
+push argument: 4
+push constant: 0
+eq
+if-false-goto: I5FT89Y
+call: #line_H
+push argument: 0
+push argument: 1
+push argument: 3
+end: #line_H
+push argument: 0
+pop local: 0
+call: #line_V
+push local: 0
+push argument: 2
+push argument: 3
+end: #line_V
+push argument: 0
+push argument: 1
+push constant: 1
+sub
+add
+pop local: 0
+call: #line_V
+push local: 0
+push argument: 2
+push argument: 3
+end: #line_V
+push argument: 0
+call: #Multiply
+push constant: 256
+push argument: 2
+push constant: 1
+sub
+end: #Multiply
+add
+pop local: 0
+call: #line_H
+push local: 0
+push argument: 1
+push argument: 3
+end: #line_H
+label: I5FT89Y
+push argument: 4
+push constant: 1
+eq
+if-false-goto: PLSAZJW
+push constant: 0
+pop local: 1
+push argument: 0
+pop local: 0
+label: 6TGGMKL
+push local: 1
+push argument: 2
+grat
+if-false-goto: N2NN5JU
+call: #line_H
+push local: 0
+push argument: 1
+push argument: 3
+end: #line_H
+push local: 0
+push constant: 256
+add
+pop local: 0
+push local: 1
+push constant: 1
+add
+pop local: 1
+goto: 6TGGMKL
+label: N2NN5JU
+label: PLSAZJW
+label: rectSLVDLWP
+push constant: 0
+nullreturn
+!function:KeyPress:0
+push constant: 65000
+point
+push this: 0
+pop local: 0
+push local: 0
+goto: KeyPressAKKCJTK
+label: KeyPressAKKCJTK
+return
+!function:Main:0
+call: #Print
+push constant: 97
+push constant: 107
+push constant: 117
+push constant: 32
+push constant: 111
+push constant: 115
+call: #MemAlloc
+push constant: 6
+end: #MemAlloc
+push constant: 11
+point
+pop this: 0
+push this: 0
+point
+pop this: 5
+pop this: 4
+pop this: 3
+pop this: 2
+pop this: 1
+pop this: 0
+push constant: 11
+point
+push this: 0
+push constant: 2
+sub
+point
+push constant: 6
+pop this: 0
+push constant: 11
+point
+push this: 0
+push constant: 12
+end: #Print
+call: #rect
+push constant: 7040
+push constant: 10
+push constant: 10
+push constant: 78
+push constant: 1
+end: #rect
+push constant: 12
+point
+push this: 0
+call: #Multiply
+push constant: 256
+push constant: 6
+end: #Multiply
+add
+push constant: 40
+sub
+push constant: 12
+point
+pop this: 0
+call: #Print
+push constant: 104
+push constant: 101
+push constant: 108
+push constant: 108
+push constant: 111
+call: #MemAlloc
+push constant: 5
+end: #MemAlloc
+push constant: 11
+point
+pop this: 0
+push this: 0
+point
+pop this: 4
+pop this: 3
+pop this: 2
+pop this: 1
+pop this: 0
+push constant: 11
+point
+push this: 0
+push constant: 2
+sub
+point
+push constant: 5
+pop this: 0
+push constant: 11
+point
+push this: 0
+push constant: 12
+end: #Print
+push constant: 3500
+push constant: 1313
+point
+pop this: 0
+push constant: 4977
+push constant: 1314
+point
+pop this: 0
+push constant: 7000
+push constant: 12
+point
+pop this: 0
+return

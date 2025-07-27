@@ -1,0 +1,3 @@
+python CPU_Compiler\compiler.py  CPU_Compiler\Code.txt CPU_VM\VM_input.txt 
+python CPU_VM\VM.py  CPU_VM\VM_input.txt CPU_Assembler\Assembler_input.txt
+python CPU_Assembler\Assembler.py  CPU_Assembler\Assembler_input.txt binary_output.hex
